@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rami", "Rami\Rami.csproj", "{779CBC37-460B-473C-9ABE-3F686FD37C9B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalacja", "Instalacja\Instalacja.vdproj", "{FB6D8637-EF70-4FF0-95A7-BB40EE73F3C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{779CBC37-460B-473C-9ABE-3F686FD37C9B}.Debug|x86.ActiveCfg = Debug|x86
+		{779CBC37-460B-473C-9ABE-3F686FD37C9B}.Debug|x86.Build.0 = Debug|x86
+		{779CBC37-460B-473C-9ABE-3F686FD37C9B}.Release|x86.ActiveCfg = Release|x86
+		{779CBC37-460B-473C-9ABE-3F686FD37C9B}.Release|x86.Build.0 = Release|x86
+		{FB6D8637-EF70-4FF0-95A7-BB40EE73F3C6}.Debug|x86.ActiveCfg = Debug
+		{FB6D8637-EF70-4FF0-95A7-BB40EE73F3C6}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
