@@ -61,10 +61,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="toolStripComboBox1.cs" />
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
     <EmbeddedResource Include="FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>

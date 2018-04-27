@@ -7,11 +7,8 @@ namespace nsDane
     {
         private string _fileName = string.Empty;
 
-<<<<<<< HEAD
         public bool _isEn = false;
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
         public string _nazwa = string.Empty;
         public string _opis = string.Empty;
 
@@ -737,12 +734,9 @@ namespace nsDane
                 writer.WriteStartDocument();
 
                 writer.WriteStartElement("Rami");
-<<<<<<< HEAD
 
                 writer.WriteElementString("wersjaAngielska", _isEn.ToString());
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 writer.WriteElementString("nazwa", _nazwa.ToString());
                 writer.WriteElementString("opis", _opis.ToString());
 
@@ -1476,13 +1470,8 @@ namespace nsDane
         /// <param name="fileName">Nazwa pliku xml</param>
         public void read(string fileName)
         {
-<<<<<<< HEAD
 
             _fileName = fileName;
-=======
-            _fileName = fileName;
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             XmlDocument doc = new System.Xml.XmlDocument();
             doc.Load(fileName);
             XmlNode node = doc.FirstChild;
@@ -1497,11 +1486,8 @@ namespace nsDane
             node = node.FirstChild;
             while (node != null)
             {
-<<<<<<< HEAD
                 if (node.Name.ToUpper() == "wersjaAngielska".ToUpper()) _isEn = bool.Parse(node.InnerText);
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 if (node.Name.ToUpper() == "nazwa".ToUpper()) _nazwa = node.InnerText;
                 if (node.Name.ToUpper() == "opis".ToUpper()) _opis = node.InnerText;
 

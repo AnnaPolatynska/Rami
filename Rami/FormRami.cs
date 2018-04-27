@@ -6,10 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-<<<<<<< HEAD
-=======
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 using System.IO;
 
 namespace Rami
@@ -26,9 +22,8 @@ namespace Rami
 
         //private ToolTip[] _podpowiedzi = new ToolTip [0];                           //podpowiedzi dla niektórych formantów
 
-        private string _helpFile = Application.StartupPath + "\\RamiHelp.chm";      //plik pomocy bezpośredniej
-
-<<<<<<< HEAD
+        private string _helpFile = Application.StartupPath + "\\RamiHelp.chm";      //plik pomocy bezpośredniej po polsku
+        private string _helpFileA = Application.StartupPath + "\\RamiHelpA.chm";  //plik pomocy bezpośredniej po angielsku
         private ToolTip _tt = new ToolTip();
 
         private class Tlumacz
@@ -36,23 +31,12 @@ namespace Rami
             private string[] _pls = new string[0];  // tablica słów polskich
             private string[] _ens = new string[0];  //angielskich
             private bool _isEn; //jesli true to angielska wersja językowa
-=======
-        private class tlumacz
-        {
-            private string[] _pls = new string[0];  // tablica słów polskich
-            private string[] _ens = new string[0];  //angielskich
-            private bool _isEn;
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             /// <summary>
             /// Konstruktor
             /// </summary>
             /// <param name="isEn">Czy język angielski - tak jeśli true.</param>
-<<<<<<< HEAD
             public Tlumacz(bool isEn)
-=======
-            public tlumacz(bool isEn)
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             {
                 _isEn = isEn;
 
@@ -73,12 +57,9 @@ namespace Rami
                 dodaj("&Help", ref _ens);
                 dodaj("&O programie", ref _pls);
                 dodaj("&About", ref _ens);
-<<<<<<< HEAD
                 dodaj("Język", ref _pls);
                 dodaj("Language", ref _ens);
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 // ToolTipText
                 dodaj("Nowe dane", ref _pls);
                 dodaj("New data", ref _ens);
@@ -96,11 +77,8 @@ namespace Rami
                 dodaj("Direct help", ref _ens);
                 dodaj("O Rami", ref _pls);
                 dodaj("About Rami", ref _ens);
-<<<<<<< HEAD
                 dodaj("Wersja językowa", ref _pls);
                 dodaj("Language version", ref _ens);
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
                 //zakładki Przyrząd/ Słowniki/ Relacje
                 dodaj("Przyrząd", ref _pls);
@@ -109,21 +87,13 @@ namespace Rami
                 dodaj("Dictionaries", ref _ens);
                 dodaj("Relacje", ref _pls);
                 dodaj("Relations", ref _ens);
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 //zakładka Przyrząd label
                 dodaj("Nazwa:", ref _pls);
                 dodaj("Name:", ref _ens);
                 dodaj("Opis:", ref _pls);
                 dodaj("Description:", ref _ens);
-<<<<<<< HEAD
 
-=======
-           
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 //zakładka Słowniki -> "Regulacje / Aktywa" / Wł.ochrony / Zagrożenie / Ataki / Wykonawcy
                 dodaj("Regulacje / Aktywa", ref _pls);
                 dodaj("Regulations / Assets", ref _ens);
@@ -135,11 +105,7 @@ namespace Rami
                 dodaj("Attacks", ref _ens);
                 dodaj("Wykonawcy", ref _pls);
                 dodaj("Attackers", ref _ens);
-<<<<<<< HEAD
 
-=======
-               
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 //zakładka Słowniki-> Regulacje/Aktywa
                 dodaj("Regulacja 1", ref _pls);
                 dodaj("Regulation 1", ref _ens);
@@ -181,33 +147,9 @@ namespace Rami
                 dodaj("Assets 9", ref _ens);
                 dodaj("Aktywa 10", ref _pls);
                 dodaj("Assets 10", ref _ens);
-<<<<<<< HEAD
                 // wpływ wartości dynamicznie zmieniające się
                 dodaj("Wpływ: ", ref _pls);
                 dodaj("Impact: ", ref _ens);
-=======
-// zamienić na wartośći dynamicznie się zmieniające ??????????????????????????????????????????????
-                dodaj("Wpływ 1", ref _pls);
-                dodaj("Impact 1", ref _ens);
-                dodaj("Wpływ 2", ref _pls);
-                dodaj("Impact 2", ref _ens);
-                dodaj("Wpływ 3", ref _pls);
-                dodaj("Impact 3", ref _ens);
-                dodaj("Wpływ 4", ref _pls);
-                dodaj("Impact 4", ref _ens);
-                dodaj("Wpływ 5", ref _pls);
-                dodaj("Impact 5", ref _ens);
-                dodaj("Wpływ 6", ref _pls);
-                dodaj("Impact 6", ref _ens);
-                dodaj("Wpływ 7", ref _pls);
-                dodaj("Impact 7", ref _ens);
-                dodaj("Wpływ 8", ref _pls);
-                dodaj("Impact 8", ref _ens);
-                dodaj("Wpływ 9", ref _pls);
-                dodaj("Impact 9", ref _ens);
-                dodaj("Wpływ 10", ref _pls);
-                dodaj("Impact 10", ref _ens);
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
                 //zakładka Słowniki -> Wł.ochrony
                 dodaj("Ochrona 1", ref _pls);
@@ -332,11 +274,7 @@ namespace Rami
                 dodaj("Regulation 9-Assets", ref _ens);
                 dodaj("Regulacja 10-Aktywa", ref _pls);
                 dodaj("Regulation 10-Assets", ref _ens);
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 dodaj("Regulacja 1", ref _pls);
                 dodaj("Regulation 1", ref _ens);
                 dodaj("Regulacja 2", ref _pls);
@@ -468,7 +406,6 @@ namespace Rami
                 dodaj("Atak 10-Ryzyko", ref _pls);
                 dodaj("Attack 10-Risk", ref _ens);
 
-<<<<<<< HEAD
                 //tłumaczenia dla wartości dynamicznie zmieniających się
                 dodaj("Czas: ", ref _pls);
                 dodaj("Time: ", ref _ens);
@@ -771,37 +708,6 @@ namespace Rami
                 dodaj("Dane są spójne.", ref _pls);
                 dodaj("The data is consistent.", ref _ens);
 
-=======
-
-//tłumaczenia dla tekstu podpowiedzi ----------------------------------------------????????????????????????????????????????????????????????????????
-                dodaj("Treść regulacji prawnej, przepisu, normy, ...", ref _pls);
-                dodaj("Content of legal regulation, provision, norm, ...", ref _ens);
-                
-                dodaj("Wpływ regulacji prawnej, przepisu, normy, ...", ref _pls);
-                dodaj("Impact of legal regulation, provision, norm, ...", ref _ens);
-
-                dodaj("Aktywa - wartość podlegająca ochronie.", ref _pls);
-                dodaj("Assets - protected value.", ref _ens);
-              
-                dodaj("Czas potrzebny do realizacji ataku.", ref _pls);
-                dodaj("Time needed to implement the attack.", ref _ens);
-                
-                dodaj("Wymagane kwalifikacje merytoryczne agresora do realizacji ataku.", ref _pls);
-                dodaj("requred professional qualifications of the aggressor needed to implement the attack.", ref _ens);
-                
-                dodaj("Wiedza na temat przyrządu pomiarowego jaką powinien dysponować agresor.", ref _pls);
-                dodaj("Knowledge about the measuring instrument that should be available to an aggressor.", ref _ens);
-
-                dodaj("Środki techniczne wymagane do realizacji ataku.", ref _pls);
-                dodaj("Technical measures required to implement the attack.", ref _ens);
-
-                dodaj("Wskaźnik ograniczeń dostępu do przyrządu dla agresora.", ref _pls);
-                dodaj("Indicator of instrument access restriction for the aggressor.", ref _ens);
-
-                dodaj("Ryzyko realizacji ataku w skali 1...5.", ref _pls);
-                dodaj("Risk of attack on a scale of 1 to 5.", ref _ens);
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             }//tlumacz
 
             /// <summary>
@@ -817,21 +723,15 @@ namespace Rami
                     {
                         if (_pls[i] == tekst) return _ens[i];
                     }
-<<<<<<< HEAD
                     if (!_isEn)
                     {
                         if (_ens[i] == tekst) return _pls[i];           
                     }
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 }
                 return tekst;
             }//zmien
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             /// <summary>
             /// Dodawanie nowej pozycji do tablicy.
             /// </summary>
@@ -843,7 +743,6 @@ namespace Rami
                 tab[tab.Length - 1] = tekst;
             }//dodaj
 
-<<<<<<< HEAD
 
             /// <summary>
             /// Ustawia tłumaczenie na angielski.
@@ -856,23 +755,16 @@ namespace Rami
                 }
             }
 
-            public void ustawfAng(bool val)
-            {
-                _isEn = val;
-            }
+           // public void ustawfAng(bool val)
+            //{
+            //    _isEn = val;
+            //}
 
         }//class tlumacz
 
 
         private Tlumacz _tlumacz = new Tlumacz(true);
 
-=======
-        }//class tlumacz
-
-        private tlumacz _tlumacz = new tlumacz(true);
-
-            
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
         public FormRami()
         {
             InitializeComponent();
@@ -881,19 +773,12 @@ namespace Rami
 
         private void FormRami_Shown(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             toolStripComboBoxJezyk.SelectedIndex = 0;
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             ustawWlasnosci();
             ustawDostep();
             ustawPodpowiedzi();
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             _suma0 = sumaWartosci();
 
             pokazTytul();
@@ -906,7 +791,6 @@ namespace Rami
         /// </summary>
         private void ustawPodpowiedzi()
         {
-<<<<<<< HEAD
             string tt = _tlumacz.zmien("Treść regulacji prawnej, przepisu, normy, ...");
             string bb = _tlumacz.zmien("Wpływ regulacji prawnej, przepisu, normy, ...");
             string cc = _tlumacz.zmien("Aktywa - wartość podlegająca ochronie.");
@@ -917,27 +801,6 @@ namespace Rami
             string hh = _tlumacz.zmien("Wskaźnik ograniczeń dostępu do przyrządu dla agresora.");
             string ii = _tlumacz.zmien("Ryzyko realizacji ataku w skali 1...5.");
 
-=======
-            string t = "Treść regulacji prawnej, przepisu, normy, ...";
-            string tt = _tlumacz.zmien(t);
-            string b = "Wpływ regulacji prawnej, przepisu, normy, ...";
-            string bb = _tlumacz.zmien(b);
-            string c = "Aktywa - wartość podlegająca ochronie.";
-            string cc = _tlumacz.zmien(c);
-            string d = "Czas potrzebny do realizacji ataku.";
-            string dd = _tlumacz.zmien(d);
-            string e = "Wymagane kwalifikacje merytoryczne agresora do realizacji ataku.";
-            string ee = _tlumacz.zmien(e);
-            string f = "Wiedza na temat przyrządu pomiarowego jaką powinien dysponować agresor.";
-            string ff = _tlumacz.zmien(f);
-            string g = "Środki techniczne wymagane do realizacji ataku.";
-            string gg = _tlumacz.zmien(g);
-            string h = "Wskaźnik ograniczeń dostępu do przyrządu dla agresora.";
-            string hh = _tlumacz.zmien(h);
-            string i = "Ryzyko realizacji ataku w skali 1...5.";
-            string ii = _tlumacz.zmien(i);
-            
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             //"Treść regulacji prawnej, przepisu, normy, ..."
             ustawPodpowiedz(textBoxRegulacja1, tt);
             ustawPodpowiedz(textBoxRegulacja2, tt);
@@ -961,11 +824,7 @@ namespace Rami
             ustawPodpowiedz(trackBarWplyw8, bb);
             ustawPodpowiedz(trackBarWplyw8, bb);
             ustawPodpowiedz(trackBarWplyw10, bb);
-<<<<<<< HEAD
 
-=======
-           
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             //"Aktywa - wartość podlegająca ochronie."
             ustawPodpowiedz(textBoxAktywa1, cc);
             ustawPodpowiedz(textBoxAktywa2, cc);
@@ -1050,10 +909,7 @@ namespace Rami
             ustawPodpowiedz(trackBarRyzyko9, ii);
             ustawPodpowiedz(trackBarRyzyko10, ii);
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
         }//ustawPodpowiedzi
 
         /// <summary>
@@ -1063,32 +919,20 @@ namespace Rami
         /// <param name="tekst">Treść podpowiedzi.</param>
         private void ustawPodpowiedz(object o, string tekst)
         {
-<<<<<<< HEAD
             //int i = _podpowiedzi.Length;
             //ToolTip tt = new ToolTip();
             _tt.SetToolTip((Control)o, tekst);
             //Array.Resize(ref _podpowiedzi, _podpowiedzi.Length + 1);
             //_podpowiedzi[i] = tt;
         }//ustawPodpowiedz
-=======
-             //int i = _podpowiedzi.Length;
-             ToolTip tt = new ToolTip();
-             tt.SetToolTip((Control)o, tekst);
-             //Array.Resize(ref _podpowiedzi, _podpowiedzi.Length + 1);
-             //_podpowiedzi[i] = tt;
-       }//ustawPodpowiedz
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
         /// <summary>
         /// Ustawia niektore parametry formantów.
         /// </summary>
         private void ustawWlasnosci()
         {
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             //tłumacz Menu główne
             nowyToolStripMenuItem.Text = _tlumacz.zmien(nowyToolStripMenuItem.Text);
             otworzToolStripMenuItem.Text = _tlumacz.zmien(otworzToolStripMenuItem.Text);
@@ -1098,14 +942,9 @@ namespace Rami
             zamknijToolStripMenuItem.Text = _tlumacz.zmien(zamknijToolStripMenuItem.Text);
             pomocToolStripMenuItem.Text = _tlumacz.zmien(pomocToolStripMenuItem.Text);
             oProgramieToolStripMenuItem.Text = _tlumacz.zmien(oProgramieToolStripMenuItem.Text);
-<<<<<<< HEAD
             toolStripComboBoxJezyk.Text = _tlumacz.zmien(toolStripComboBoxJezyk.Text);
 
             nowyToolStripMenuItem.ToolTipText = _tlumacz.zmien(nowyToolStripMenuItem.ToolTipText);
-=======
-
-            nowyToolStripMenuItem.ToolTipText = _tlumacz.zmien(nowyToolStripMenuItem.ToolTipText);            
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             otworzToolStripMenuItem.ToolTipText = _tlumacz.zmien(otworzToolStripMenuItem.ToolTipText);
             zapiszToolStripMenuItem.ToolTipText = _tlumacz.zmien(zapiszToolStripMenuItem.ToolTipText);
             zapiszJakoToolStripMenuItem.ToolTipText = _tlumacz.zmien(zapiszJakoToolStripMenuItem.ToolTipText);
@@ -1113,10 +952,7 @@ namespace Rami
             zamknijToolStripMenuItem.ToolTipText = _tlumacz.zmien(zamknijToolStripMenuItem.ToolTipText);
             pomocToolStripMenuItem.ToolTipText = _tlumacz.zmien(pomocToolStripMenuItem.ToolTipText);
             oProgramieToolStripMenuItem.ToolTipText = _tlumacz.zmien(oProgramieToolStripMenuItem.ToolTipText);
-<<<<<<< HEAD
             toolStripComboBoxJezyk.ToolTipText = _tlumacz.zmien(toolStripComboBoxJezyk.ToolTipText); // podpowiedz dla wersji językowej
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             //tłumacz zakładki Przyrząd/ Slowniki/ Relacje
             tabControl1.TabPages[0].Text = _tlumacz.zmien(tabControl1.TabPages[0].Text);
@@ -1215,32 +1051,6 @@ namespace Rami
             tabControl14.TabPages[8].Text = _tlumacz.zmien(tabControl14.TabPages[8].Text);
             tabControl14.TabPages[9].Text = _tlumacz.zmien(tabControl14.TabPages[9].Text);
 
-<<<<<<< HEAD
-=======
-
-
-            // czy przetłumaczy z ustaw Podpowiedz????????????????????????????????????????????????????????????????????????????????????????????????????????????
-            trackBarCzas1.Text = _tlumacz.zmien(trackBarCzas1.Text);
-            trackBarCzas2.Text = _tlumacz.zmien(trackBarCzas2.Text);
-            trackBarCzas3.Text = _tlumacz.zmien(trackBarCzas3.Text);
-            trackBarCzas4.Text = _tlumacz.zmien(trackBarCzas4.Text);
-            trackBarCzas5.Text = _tlumacz.zmien(trackBarCzas5.Text);
-            trackBarCzas6.Text = _tlumacz.zmien(trackBarCzas6.Text);
-            trackBarCzas7.Text = _tlumacz.zmien(trackBarCzas7.Text);
-            trackBarCzas8.Text = _tlumacz.zmien(trackBarCzas8.Text);
-            trackBarCzas9.Text = _tlumacz.zmien(trackBarCzas9.Text);
-            trackBarCzas10.Text = _tlumacz.zmien(trackBarCzas10.Text);
-
-
-
-
-
-
-
-
-
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             //------------------------------- Regulacje
 
             labelR1.Text = _tlumacz.zmien(labelR1.Text);
@@ -1253,11 +1063,7 @@ namespace Rami
             labelR8.Text = _tlumacz.zmien(labelR8.Text);
             labelR9.Text = _tlumacz.zmien(labelR9.Text);
             labelR10.Text = _tlumacz.zmien(labelR10.Text);
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             int x = labelR1.Left;
 
             labelR2.Left = x;
@@ -1293,20 +1099,6 @@ namespace Rami
             textBoxRegulacja9.Left = x;
             textBoxRegulacja10.Left = x;
 
-<<<<<<< HEAD
-=======
-            labelWplyw1.Text = _tlumacz.zmien(labelWplyw1.Text);
-            labelWplyw2.Text = _tlumacz.zmien(labelWplyw2.Text);
-            labelWplyw3.Text = _tlumacz.zmien(labelWplyw3.Text);
-            labelWplyw4.Text = _tlumacz.zmien(labelWplyw4.Text);
-            labelWplyw5.Text = _tlumacz.zmien(labelWplyw5.Text);
-            labelWplyw6.Text = _tlumacz.zmien(labelWplyw6.Text);
-            labelWplyw7.Text = _tlumacz.zmien(labelWplyw7.Text);
-            labelWplyw8.Text = _tlumacz.zmien(labelWplyw8.Text);
-            labelWplyw9.Text = _tlumacz.zmien(labelWplyw9.Text);
-            labelWplyw10.Text = _tlumacz.zmien(labelWplyw10.Text);
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             x = labelWplyw1.Left;
             labelWplyw2.Left = x;
             labelWplyw3.Left = x;
@@ -1341,26 +1133,9 @@ namespace Rami
             labelA8.Text = _tlumacz.zmien(labelA8.Text);
             labelA9.Text = _tlumacz.zmien(labelA9.Text);
             labelA10.Text = _tlumacz.zmien(labelA10.Text);
-<<<<<<< HEAD
 
             x = labelR1.Left;
 
-=======
-           
-            x = labelR1.Left;
-
-            labelA1.Left = x;
-            labelA2.Left = x;
-            labelA3.Left = x;
-            labelA4.Left = x;
-            labelA5.Left = x;
-            labelA6.Left = x;
-            labelA7.Left = x;
-            labelA8.Left = x;
-            labelA9.Left = x;
-            labelA10.Left = x;
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             labelA1.Top = textBoxAktywa1.Top;
             labelA2.Top = textBoxAktywa2.Top;
             labelA3.Top = textBoxAktywa3.Top;
@@ -1374,20 +1149,6 @@ namespace Rami
 
             x = textBoxRegulacja1.Left;
 
-<<<<<<< HEAD
-=======
-            textBoxAktywa1.Left = x;
-            textBoxAktywa2.Left = x;
-            textBoxAktywa3.Left = x;
-            textBoxAktywa4.Left = x;
-            textBoxAktywa5.Left = x;
-            textBoxAktywa6.Left = x;
-            textBoxAktywa7.Left = x;
-            textBoxAktywa8.Left = x;
-            textBoxAktywa9.Left = x;
-            textBoxAktywa10.Left = x;
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             //------------------------------- Własnosci ochrony
 
             labelO1.Text = _tlumacz.zmien(labelO1.Text);
@@ -1400,11 +1161,7 @@ namespace Rami
             labelO8.Text = _tlumacz.zmien(labelO8.Text);
             labelO9.Text = _tlumacz.zmien(labelO9.Text);
             labelO10.Text = _tlumacz.zmien(labelO10.Text);
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             x = labelR1.Left;
 
             labelO1.Left = x;
@@ -1441,11 +1198,7 @@ namespace Rami
             labelZ8.Text = _tlumacz.zmien(labelZ8.Text);
             labelZ9.Text = _tlumacz.zmien(labelZ9.Text);
             labelZ10.Text = _tlumacz.zmien(labelZ10.Text);
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             wspolneWlasnosci(labelO1, labelZ1);
             wspolneWlasnosci(labelO2, labelZ2);
             wspolneWlasnosci(labelO3, labelZ3);
@@ -1492,7 +1245,6 @@ namespace Rami
             wspolneWlasnosci(labelR9, labelM9);
             wspolneWlasnosci(labelR10, labelM10);
 
-<<<<<<< HEAD
             //textBoxAtak1.Location = textBoxRegulacja1.Location;
             //textBoxAtak2.Location = textBoxRegulacja2.Location;
             //textBoxAtak3.Location = textBoxRegulacja3.Location;
@@ -1503,18 +1255,6 @@ namespace Rami
             //textBoxAtak8.Location = textBoxRegulacja8.Location;
             //textBoxAtak9.Location = textBoxRegulacja9.Location;
             //textBoxAtak10.Location = textBoxRegulacja10.Location;
-=======
-            textBoxAtak1.Location = textBoxRegulacja1.Location;
-            textBoxAtak2.Location = textBoxRegulacja2.Location;
-            textBoxAtak3.Location = textBoxRegulacja3.Location;
-            textBoxAtak4.Location = textBoxRegulacja4.Location;
-            textBoxAtak5.Location = textBoxRegulacja5.Location;
-            textBoxAtak6.Location = textBoxRegulacja6.Location;
-            textBoxAtak7.Location = textBoxRegulacja7.Location;
-            textBoxAtak8.Location = textBoxRegulacja8.Location;
-            textBoxAtak9.Location = textBoxRegulacja9.Location;
-            textBoxAtak10.Location = textBoxRegulacja10.Location;
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             //------------------------------- Wykonawca
 
@@ -2028,14 +1768,11 @@ namespace Rami
             s += textBoxNazwa.Text;
             s += textBoxOpis.Text;
 
-<<<<<<< HEAD
             if (toolStripComboBoxJezyk.SelectedIndex == 0)
                 s += "false";
             else
                 s += "true";
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             s += textBoxRegulacja1.Text;
             s += textBoxRegulacja2.Text;
             s += textBoxRegulacja3.Text;
@@ -2240,10 +1977,7 @@ namespace Rami
 
             return s;
         }//sumaWartosci
-<<<<<<< HEAD
        
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
         /// <summary>
         /// Zwraca sumę wartości wszystkich stanów wyboru w liście.
@@ -2270,12 +2004,9 @@ namespace Rami
             o2.Anchor = o1.Anchor;
             o2.Dock = o1.Dock;
             o2.Font = o1.Font;
-<<<<<<< HEAD
             o2.Location = o1.Location;
             o2.TextAlign = o1.TextAlign;
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
         }//wspolnleWlasnosci
 
         private void wspolneWlasnosci(TextBox o1, TextBox o2)
@@ -2343,101 +2074,61 @@ namespace Rami
 
         private void trackBarWplyw1_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw1.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw1.Value.ToString();
-=======
-            labelWplyw1.Text = "Wpływ: " + trackBarWplyw1.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka1();
         }
 
         private void trackBarWplyw2_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw2.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw2.Value.ToString();
-=======
-            labelWplyw2.Text = "Wpływ: " + trackBarWplyw2.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka2();
         }
 
         private void trackBarWplyw3_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw3.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw3.Value.ToString();
-=======
-            labelWplyw3.Text = "Wpływ: " + trackBarWplyw3.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka3();
         }
 
         private void trackBarWplyw4_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw4.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw4.Value.ToString();
-=======
-            labelWplyw4.Text = "Wpływ: " + trackBarWplyw4.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka4();
         }
 
         private void trackBarWplyw5_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw5.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw5.Value.ToString();
-=======
-            labelWplyw5.Text = "Wpływ: " + trackBarWplyw5.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka5();
         }
 
         private void trackBarWplyw6_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw6.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw6.Value.ToString();
-=======
-            labelWplyw6.Text = "Wpływ: " + trackBarWplyw6.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka6();
         }
 
         private void trackBarWplyw7_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw7.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw7.Value.ToString();
-=======
-            labelWplyw7.Text = "Wpływ: " + trackBarWplyw7.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka7();
         }
 
         private void trackBarWplyw8_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw8.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw8.Value.ToString();
-=======
-            labelWplyw8.Text = "Wpływ: " + trackBarWplyw8.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka8();
         }
 
         private void trackBarWplyw9_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw9.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw9.Value.ToString();
-=======
-            labelWplyw9.Text = "Wpływ: " + trackBarWplyw9.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka9();
         }
 
         private void trackBarWplyw10_Scroll(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             labelWplyw10.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw10.Value.ToString();
-=======
-            labelWplyw10.Text = "Wpływ: " + trackBarWplyw10.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             pokazParametryRyzyka10();
         }
 
@@ -2453,21 +2144,12 @@ namespace Rami
                 trackBarWyposazenie1.Value,
                 trackBarDostep1.Value);
 
-<<<<<<< HEAD
             labelCzas1.Text = _tlumacz.zmien("Czas: ") + trackBarCzas1.Value.ToString();
             labelKwalifikacje1.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje1.Value.ToString();
             labelWiedza1.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza1.Value.ToString();
             labelWyposazenie1.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie1.Value.ToString();
             labelDostep1.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep1.Value.ToString();
             labelRyzyko1.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko1.Value.ToString();
-=======
-            labelCzas1.Text = "Czas: " + trackBarCzas1.Value.ToString();
-            labelKwalifikacje1.Text = "Kwalifikacje :" + trackBarKwalifikacje1.Value.ToString();
-            labelWiedza1.Text = "Wiedza :" + trackBarWiedza1.Value.ToString();
-            labelWyposazenie1.Text = "Wyposażenie :" + trackBarWyposazenie1.Value.ToString();
-            labelDostep1.Text = "Dostęp: " + trackBarDostep1.Value.ToString();
-            labelRyzyko1.Text = "Ryzyko: " + trackBarRyzyko1.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis1.Text = czasOpis(trackBarCzas1.Value);
             labelKwalifikacjeOpis1.Text = kwalifikacjeOpis(trackBarKwalifikacje1.Value);
@@ -2485,21 +2167,12 @@ namespace Rami
                 trackBarWyposazenie2.Value,
                 trackBarDostep2.Value);
 
-<<<<<<< HEAD
             labelCzas2.Text = _tlumacz.zmien("Czas: ") + trackBarCzas2.Value.ToString();
             labelKwalifikacje2.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje2.Value.ToString();
             labelWiedza2.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza2.Value.ToString();
             labelWyposazenie2.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie2.Value.ToString();
             labelDostep2.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep2.Value.ToString();
             labelRyzyko2.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko2.Value.ToString();
-=======
-            labelCzas2.Text = "Czas: " + trackBarCzas2.Value.ToString();
-            labelKwalifikacje2.Text = "Kwalifikacje: " + trackBarKwalifikacje2.Value.ToString();
-            labelWiedza2.Text = "Wiedza: " + trackBarWiedza2.Value.ToString();
-            labelWyposazenie2.Text = "Wyposażenie: " + trackBarWyposazenie2.Value.ToString();
-            labelDostep2.Text = "Dostęp: " + trackBarDostep2.Value.ToString();
-            labelRyzyko2.Text = "Ryzyko: " + trackBarRyzyko2.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis2.Text = czasOpis(trackBarCzas2.Value);
             labelKwalifikacjeOpis2.Text = kwalifikacjeOpis(trackBarKwalifikacje2.Value);
@@ -2517,22 +2190,12 @@ namespace Rami
                 trackBarWyposazenie3.Value,
                 trackBarDostep3.Value);
 
-<<<<<<< HEAD
             labelCzas3.Text = _tlumacz.zmien("Czas: ") + trackBarCzas3.Value.ToString();
             labelKwalifikacje3.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje3.Value.ToString();
             labelWiedza3.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza3.Value.ToString();
             labelWyposazenie3.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie3.Value.ToString();
             labelDostep3.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep3.Value.ToString();
             labelRyzyko3.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko3.Value.ToString();
-=======
-            labelCzas3.Text = "Czas: " + trackBarCzas3.Value.ToString();
-            labelKwalifikacje3.Text = "Kwalifikacje: " + trackBarKwalifikacje3.Value.ToString();
-            labelWiedza3.Text = "Wiedza: " + trackBarWiedza3.Value.ToString();
-            labelWyposazenie3.Text = "Wyposażenie: " + trackBarWyposazenie3.Value.ToString();
-            labelDostep3.Text = "Dostęp: " + trackBarDostep3.Value.ToString();
-            labelRyzyko3.Text = "Ryzyko: " + trackBarRyzyko3.Value.ToString();
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis3.Text = czasOpis(trackBarCzas3.Value);
             labelKwalifikacjeOpis3.Text = kwalifikacjeOpis(trackBarKwalifikacje3.Value);
@@ -2550,21 +2213,12 @@ namespace Rami
                 trackBarWyposazenie4.Value,
                 trackBarDostep4.Value);
 
-<<<<<<< HEAD
             labelCzas4.Text = _tlumacz.zmien("Czas: ") + trackBarCzas4.Value.ToString();
             labelKwalifikacje4.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje4.Value.ToString();
             labelWiedza4.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza4.Value.ToString();
             labelWyposazenie4.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie4.Value.ToString();
             labelDostep4.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep4.Value.ToString();
             labelRyzyko4.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko4.Value.ToString();
-=======
-            labelCzas4.Text = "Czas: " + trackBarCzas4.Value.ToString();
-            labelKwalifikacje4.Text = "Kwalifikacje: " + trackBarKwalifikacje4.Value.ToString();
-            labelWiedza4.Text = "Wiedza: " + trackBarWiedza4.Value.ToString();
-            labelWyposazenie4.Text = "Wyposażenie: " + trackBarWyposazenie4.Value.ToString();
-            labelDostep4.Text = "Dostęp: " + trackBarDostep4.Value.ToString();
-            labelRyzyko4.Text = "Ryzyko: " + trackBarRyzyko4.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis4.Text = czasOpis(trackBarCzas4.Value);
             labelKwalifikacjeOpis4.Text = kwalifikacjeOpis(trackBarKwalifikacje4.Value);
@@ -2582,21 +2236,12 @@ namespace Rami
                 trackBarWyposazenie5.Value,
                 trackBarDostep5.Value);
 
-<<<<<<< HEAD
             labelCzas5.Text = _tlumacz.zmien("Czas: ") + trackBarCzas5.Value.ToString();
             labelKwalifikacje5.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje5.Value.ToString();
             labelWiedza5.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza5.Value.ToString();
             labelWyposazenie5.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie5.Value.ToString();
             labelDostep5.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep5.Value.ToString();
             labelRyzyko5.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko5.Value.ToString();
-=======
-            labelCzas5.Text = "Czas: " + trackBarCzas5.Value.ToString();
-            labelKwalifikacje5.Text = "Kwalifikacje: " + trackBarKwalifikacje5.Value.ToString();
-            labelWiedza5.Text = "Wiedza: " + trackBarWiedza5.Value.ToString();
-            labelWyposazenie5.Text = "Wyposażenie: " + trackBarWyposazenie5.Value.ToString();
-            labelDostep5.Text = "Dostęp: " + trackBarDostep5.Value.ToString();
-            labelRyzyko5.Text = "Ryzyko: " + trackBarRyzyko5.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis5.Text = czasOpis(trackBarCzas5.Value);
             labelKwalifikacjeOpis5.Text = kwalifikacjeOpis(trackBarKwalifikacje5.Value);
@@ -2614,21 +2259,12 @@ namespace Rami
                 trackBarWyposazenie6.Value,
                 trackBarDostep6.Value);
 
-<<<<<<< HEAD
             labelCzas6.Text = _tlumacz.zmien("Czas: ") + trackBarCzas6.Value.ToString();
             labelKwalifikacje6.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje6.Value.ToString();
             labelWiedza6.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza6.Value.ToString();
             labelWyposazenie6.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie6.Value.ToString();
             labelDostep6.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep6.Value.ToString();
             labelRyzyko6.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko6.Value.ToString();
-=======
-            labelCzas6.Text = "Czas: " + trackBarCzas6.Value.ToString();
-            labelKwalifikacje6.Text = "Kwalifikacje: " + trackBarKwalifikacje6.Value.ToString();
-            labelWiedza6.Text = "Wiedza: " + trackBarWiedza6.Value.ToString();
-            labelWyposazenie6.Text = "Wyposażenie: " + trackBarWyposazenie6.Value.ToString();
-            labelDostep6.Text = "Dostęp: " + trackBarDostep6.Value.ToString();
-            labelRyzyko6.Text = "Ryzyko: " + trackBarRyzyko6.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis6.Text = czasOpis(trackBarCzas6.Value);
             labelKwalifikacjeOpis6.Text = kwalifikacjeOpis(trackBarKwalifikacje6.Value);
@@ -2646,31 +2282,18 @@ namespace Rami
                 trackBarWyposazenie7.Value,
                 trackBarDostep7.Value);
 
-<<<<<<< HEAD
             labelCzas7.Text = _tlumacz.zmien("Czas: ") + trackBarCzas7.Value.ToString();
             labelKwalifikacje7.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje7.Value.ToString();
             labelWiedza7.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza7.Value.ToString();
             labelWyposazenie7.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie7.Value.ToString();
             labelDostep7.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep7.Value.ToString();
             labelRyzyko7.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko7.Value.ToString();
-=======
-            labelCzas7.Text = "Czas: " + trackBarCzas7.Value.ToString();
-            labelKwalifikacje7.Text = "Kwalifikacje: " + trackBarKwalifikacje7.Value.ToString();
-            labelWiedza7.Text = "Wiedza: " + trackBarWiedza7.Value.ToString();
-            labelWyposazenie7.Text = "Wyposażenie: " + trackBarWyposazenie7.Value.ToString();
-            labelDostep7.Text = "Dostęp: " + trackBarDostep7.Value.ToString();
-            labelRyzyko7.Text = "Ryzyko: " + trackBarRyzyko7.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis7.Text = czasOpis(trackBarCzas7.Value);
             labelKwalifikacjeOpis7.Text = kwalifikacjeOpis(trackBarKwalifikacje7.Value);
             labelWiedzaOpis7.Text = wiedzaOpis(trackBarWiedza7.Value);
             labelWyposazenieOpis7.Text = wyposazenieOpis(trackBarWyposazenie7.Value);
-<<<<<<< HEAD
             labelDostepOpis7.Text = dostepOpis(trackBarDostep7.Value);
-=======
-            labelDostepOpis7.Text = dostepOpis(trackBarDostep6.Value);
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
         }//ustawRyzyko7
 
         private void pokazParametryRyzyka8()
@@ -2682,31 +2305,18 @@ namespace Rami
                 trackBarWyposazenie8.Value,
                 trackBarDostep8.Value);
 
-<<<<<<< HEAD
             labelCzas8.Text = _tlumacz.zmien("Czas: ") + trackBarCzas8.Value.ToString();
             labelKwalifikacje8.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje8.Value.ToString();
             labelWiedza8.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza8.Value.ToString();
             labelWyposazenie8.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie8.Value.ToString();
             labelDostep8.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep8.Value.ToString();
             labelRyzyko8.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko8.Value.ToString();
-=======
-            labelCzas8.Text = "Czas: " + trackBarCzas8.Value.ToString();
-            labelKwalifikacje8.Text = "Kwalifikacje: " + trackBarKwalifikacje8.Value.ToString();
-            labelWiedza8.Text = "Wiedza: " + trackBarWiedza8.Value.ToString();
-            labelWyposazenie8.Text = "Wyposażenie: " + trackBarWyposazenie8.Value.ToString();
-            labelDostep8.Text = "Dostęp: " + trackBarDostep8.Value.ToString();
-            labelRyzyko8.Text = "Ryzyko: " + trackBarRyzyko8.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis8.Text = czasOpis(trackBarCzas8.Value);
             labelKwalifikacjeOpis8.Text = kwalifikacjeOpis(trackBarKwalifikacje8.Value);
             labelWiedzaOpis8.Text = wiedzaOpis(trackBarWiedza8.Value);
             labelWyposazenieOpis8.Text = wyposazenieOpis(trackBarWyposazenie8.Value);
-<<<<<<< HEAD
             labelDostepOpis8.Text = dostepOpis(trackBarDostep8.Value);
-=======
-            labelDostepOpis8.Text = dostepOpis(trackBarDostep6.Value);
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
         }//ustawRyzyko8
 
         private void pokazParametryRyzyka9()
@@ -2718,31 +2328,18 @@ namespace Rami
                 trackBarWyposazenie9.Value,
                 trackBarDostep9.Value);
 
-<<<<<<< HEAD
             labelCzas9.Text = _tlumacz.zmien("Czas: ") + trackBarCzas9.Value.ToString();
             labelKwalifikacje9.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje9.Value.ToString();
             labelWiedza9.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza9.Value.ToString();
             labelWyposazenie9.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie9.Value.ToString();
             labelDostep9.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep9.Value.ToString();
             labelRyzyko9.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko9.Value.ToString();
-=======
-            labelCzas9.Text = "Czas: " + trackBarCzas9.Value.ToString();
-            labelKwalifikacje9.Text = "Kwalifikacje: " + trackBarKwalifikacje9.Value.ToString();
-            labelWiedza9.Text = "Wiedza: " + trackBarWiedza9.Value.ToString();
-            labelWyposazenie9.Text = "Wyposażenie: " + trackBarWyposazenie9.Value.ToString();
-            labelDostep9.Text = "Dostęp: " + trackBarDostep9.Value.ToString();
-            labelRyzyko9.Text = "Ryzyko: " + trackBarRyzyko9.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis9.Text = czasOpis(trackBarCzas9.Value);
             labelKwalifikacjeOpis9.Text = kwalifikacjeOpis(trackBarKwalifikacje9.Value);
             labelWiedzaOpis9.Text = wiedzaOpis(trackBarWiedza9.Value);
             labelWyposazenieOpis9.Text = wyposazenieOpis(trackBarWyposazenie9.Value);
-<<<<<<< HEAD
             labelDostepOpis9.Text = dostepOpis(trackBarDostep9.Value);
-=======
-            labelDostepOpis9.Text = dostepOpis(trackBarDostep6.Value);
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
         }//ustawRyzyko9
 
         private void pokazParametryRyzyka10()
@@ -2754,31 +2351,18 @@ namespace Rami
                trackBarWyposazenie10.Value,
                trackBarDostep10.Value);
 
-<<<<<<< HEAD
             labelCzas10.Text = _tlumacz.zmien("Czas: ") + trackBarCzas10.Value.ToString();
             labelKwalifikacje10.Text = _tlumacz.zmien("Kwalifikacje: ") + trackBarKwalifikacje10.Value.ToString();
             labelWiedza10.Text = _tlumacz.zmien("Wiedza: ") + trackBarWiedza10.Value.ToString();
             labelWyposazenie10.Text = _tlumacz.zmien("Wyposażenie: ") + trackBarWyposazenie10.Value.ToString();
             labelDostep10.Text = _tlumacz.zmien("Dostęp: ") + trackBarDostep10.Value.ToString();
             labelRyzyko10.Text = _tlumacz.zmien("Ryzyko: ") + trackBarRyzyko10.Value.ToString();
-=======
-            labelCzas10.Text = "Czas: " + trackBarCzas10.Value.ToString();
-            labelKwalifikacje10.Text = "Kwalifikacje: " + trackBarKwalifikacje10.Value.ToString();
-            labelWiedza10.Text = "Wiedza: " + trackBarWiedza10.Value.ToString();
-            labelWyposazenie10.Text = "Wyposażenie: " + trackBarWyposazenie10.Value.ToString();
-            labelDostep10.Text = "Dostęp: " + trackBarDostep10.Value.ToString();
-            labelRyzyko10.Text = "Ryzyko: " + trackBarRyzyko10.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             labelCzasOpis10.Text = czasOpis(trackBarCzas10.Value);
             labelKwalifikacjeOpis10.Text = kwalifikacjeOpis(trackBarKwalifikacje10.Value);
             labelWiedzaOpis10.Text = wiedzaOpis(trackBarWiedza10.Value);
             labelWyposazenieOpis10.Text = wyposazenieOpis(trackBarWyposazenie10.Value);
-<<<<<<< HEAD
             labelDostepOpis10.Text = dostepOpis(trackBarDostep10.Value);
-=======
-            labelDostepOpis10.Text = dostepOpis(trackBarDostep6.Value);
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
         }//ustawRyzyko10
 
         /// <summary>
@@ -2790,7 +2374,6 @@ namespace Rami
         {
             string s = string.Empty;
 
-<<<<<<< HEAD
             s = _tlumacz.zmien("<= dzień");
             if (v == 1) s = _tlumacz.zmien("<= tydz.");
             if (v == 2) s = _tlumacz.zmien("<= 2 tyg.");
@@ -2801,18 +2384,6 @@ namespace Rami
             if (v > 13 & v <= 15) s = _tlumacz.zmien("<= 5 mies.");
             if (v > 15 & v <= 17) s = _tlumacz.zmien("<= 6 mies.");
             if (v > 17) s = _tlumacz.zmien("> 6 mies.");
-=======
-            s = "<= dzień";
-            if (v == 1) s = "<= tydz.";
-            if (v == 2) s = "<= 2 tyg.";
-            if (v > 2 & v <= 4) s = "<= mies.";
-            if (v > 4 & v <= 7) s = "<= 2 mies.";
-            if (v > 7 & v <= 10) s = "<= 3 mies.";
-            if (v > 10 & v <= 13) s = "<= 4 mies.";
-            if (v > 13 & v <= 15) s = "<= 5 mies.";
-            if (v > 15 & v <= 17) s = "<= 6 mies.";
-            if (v > 17) s = "> 6 mies.";
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             return s;
         }//opisCzasu
@@ -2826,17 +2397,10 @@ namespace Rami
         {
             string s = string.Empty;
 
-<<<<<<< HEAD
             s = _tlumacz.zmien("Laik");
             if (v > 1 & v <= 3) s = _tlumacz.zmien("Biegły");
             if (v > 3 & v <= 6) s = _tlumacz.zmien("Ekspert");
             if (v > 6) s = _tlumacz.zmien("Ekspert kilku dziedzin");
-=======
-            s = "Laik";
-            if (v > 1 & v <= 3) s = "Biegły";
-            if (v > 3 & v <= 6) s = "Ekspert";
-            if (v > 6) s = "Ekspert kilku dziedzin";
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             return s;
         }//kwalifikacjeOpis
 
@@ -2849,17 +2413,10 @@ namespace Rami
         {
             string s = string.Empty;
 
-<<<<<<< HEAD
             s = _tlumacz.zmien("Publiczna");
             if (v > 0 & v <= 3) s = _tlumacz.zmien("Ograniczona");
             if (v > 3 & v <= 7) s = _tlumacz.zmien("Wrażliwa");
             if (v > 7) s = _tlumacz.zmien("Krytyczna");
-=======
-            s = "Publiczna";
-            if (v > 0 & v <= 3) s = "Ograniczona";
-            if (v > 3 & v <= 7) s = "Wrażliwa";
-            if (v > 7) s = "Krytyczna";
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             return s;
         }//wiedzaOpis
 
@@ -2872,17 +2429,10 @@ namespace Rami
         {
             string s = string.Empty;
 
-<<<<<<< HEAD
             s = _tlumacz.zmien("Standardowe");
             if (v > 0 & v <= 4) s = _tlumacz.zmien("Specjalistyczne");
             if (v > 4 & v <= 7) s = _tlumacz.zmien("Na zamówienie");
             if (v > 7) s = _tlumacz.zmien("Wielokrotne zamówienie");
-=======
-            s = "Standardowe";
-            if (v > 0 & v <= 4) s = "Specjalistyczne";
-            if (v > 4 & v <= 7) s = "Na zamówienie";
-            if (v > 7) s = "Wielokrotne zamówienie";
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             return s;
         }//wyposazenieOpis
 
@@ -2895,17 +2445,10 @@ namespace Rami
         {
             string s = string.Empty;
 
-<<<<<<< HEAD
             s = _tlumacz.zmien("Nieograniczony");
             if (v == 1) s = _tlumacz.zmien("Łatwy");
             if (v > 1 & v <= 4) s = _tlumacz.zmien("Umiarkowany");
             if (v > 4) s = _tlumacz.zmien("Trudny");
-=======
-            s = "Nieograniczony";
-            if (v == 1) s = "Łatwy";
-            if (v > 1 & v <= 4) s = "Umiarkowany";
-            if (v > 4) s = "Trudny";
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             return s;
         }//dostepOpis
 
@@ -2969,7 +2512,6 @@ namespace Rami
             trackBarWplyw9.Value = trackBarWplyw9.Maximum;
             trackBarWplyw10.Value = trackBarWplyw10.Maximum;
 
-<<<<<<< HEAD
             labelWplyw1.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw1.Value.ToString();
             labelWplyw2.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw2.Value.ToString();
             labelWplyw3.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw3.Value.ToString();
@@ -2980,18 +2522,6 @@ namespace Rami
             labelWplyw8.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw8.Value.ToString();
             labelWplyw9.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw9.Value.ToString();
             labelWplyw10.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw10.Value.ToString();
-=======
-            labelWplyw1.Text = "Wpływ: " + trackBarWplyw1.Value.ToString();
-            labelWplyw2.Text = "Wpływ: " + trackBarWplyw2.Value.ToString();
-            labelWplyw3.Text = "Wpływ: " + trackBarWplyw3.Value.ToString();
-            labelWplyw4.Text = "Wpływ: " + trackBarWplyw4.Value.ToString();
-            labelWplyw5.Text = "Wpływ: " + trackBarWplyw5.Value.ToString();
-            labelWplyw6.Text = "Wpływ: " + trackBarWplyw6.Value.ToString();
-            labelWplyw7.Text = "Wpływ: " + trackBarWplyw7.Value.ToString();
-            labelWplyw8.Text = "Wpływ: " + trackBarWplyw8.Value.ToString();
-            labelWplyw9.Text = "Wpływ: " + trackBarWplyw9.Value.ToString();
-            labelWplyw10.Text = "Wpływ: " + trackBarWplyw10.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             //-----------------------------------Aktywa
             textBoxAktywa1.Text = string.Empty;
@@ -3534,7 +3064,6 @@ namespace Rami
                     _dane = new nsDane.dane();
                     _dane.read(ofp.FileName);
 
-<<<<<<< HEAD
                     if(!_dane._isEn)
                     {
                         toolStripComboBoxJezyk.SelectedIndex = 0;
@@ -3546,11 +3075,6 @@ namespace Rami
                     textBoxOpis.Text = _dane._opis;
 
                     //------------------------------ Regulacje
-=======
-                    //------------------------------ Regulacje
-                    textBoxNazwa.Text = _dane._nazwa;
-                    textBoxOpis.Text = _dane._opis;
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     textBoxRegulacja1.Text = _dane._regulacja1;
                     textBoxRegulacja2.Text = _dane._regulacja2;
                     textBoxRegulacja3.Text = _dane._regulacja3;
@@ -3573,7 +3097,6 @@ namespace Rami
                     trackBarWplyw9.Value = _dane._wplyw9;
                     trackBarWplyw10.Value = _dane._wplyw10;
 
-<<<<<<< HEAD
                     labelWplyw1.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw1.Value.ToString();
                     labelWplyw2.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw2.Value.ToString();
                     labelWplyw3.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw3.Value.ToString();
@@ -3584,18 +3107,6 @@ namespace Rami
                     labelWplyw8.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw8.Value.ToString();
                     labelWplyw9.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw9.Value.ToString();
                     labelWplyw10.Text = _tlumacz.zmien("Wpływ: ") + trackBarWplyw10.Value.ToString();
-=======
-                    labelWplyw1.Text = "Wpływ: " + trackBarWplyw1.Value.ToString();
-                    labelWplyw2.Text = "Wpływ: " + trackBarWplyw2.Value.ToString();
-                    labelWplyw3.Text = "Wpływ: " + trackBarWplyw3.Value.ToString();
-                    labelWplyw4.Text = "Wpływ: " + trackBarWplyw4.Value.ToString();
-                    labelWplyw5.Text = "Wpływ: " + trackBarWplyw5.Value.ToString();
-                    labelWplyw6.Text = "Wpływ: " + trackBarWplyw6.Value.ToString();
-                    labelWplyw7.Text = "Wpływ: " + trackBarWplyw7.Value.ToString();
-                    labelWplyw8.Text = "Wpływ: " + trackBarWplyw8.Value.ToString();
-                    labelWplyw9.Text = "Wpływ: " + trackBarWplyw9.Value.ToString();
-                    labelWplyw10.Text = "Wpływ: " + trackBarWplyw10.Value.ToString();
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
                     //------------------------------ Aktywa
                     textBoxAktywa1.Text = _dane._aktywa1;
@@ -5702,12 +5213,9 @@ namespace Rami
 
                 _dane._nazwa = textBoxNazwa.Text;
                 _dane._opis = textBoxOpis.Text;
-<<<<<<< HEAD
 
                 _dane._isEn = toolStripComboBoxJezyk.SelectedIndex == 1;
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 _dane._regulacja1 = textBoxRegulacja1.Text;
                 _dane._regulacja2 = textBoxRegulacja2.Text;
                 _dane._regulacja3 = textBoxRegulacja3.Text;
@@ -6446,11 +5954,7 @@ namespace Rami
         {
             if (_suma0 != sumaWartosci())
             {
-<<<<<<< HEAD
                 if (DialogResult.Yes == MessageBox.Show(_tlumacz.zmien("Czy zapisać zmiany?"), "Rami",
-=======
-                if (DialogResult.Yes == MessageBox.Show("Czy zapisać zmiany?", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
                     if (File.Exists(_plik))
@@ -6463,193 +5967,122 @@ namespace Rami
 
         private void sprawdzToolStripMenuItem_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             
 
             if (!czyJestRegulacja())
             {
                 MessageBox.Show(_tlumacz.zmien("Brak regulacji."), "Rami",
-=======
-            aktualizuj();
-
-            if (!czyJestRegulacja())
-            {
-                MessageBox.Show("Brak regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.None);
                 return;
             }
 
             if (!czyJestAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Brak aktywa."), "Rami",
-=======
-                MessageBox.Show("Brak aktywa.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.None);
                 return;
             }
 
             if (!czyJestWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Brak własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Brak własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.None);
                 return;
             }
 
             if (!czyJestSzkoda())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Brak szkody."), "Rami",
-=======
-                MessageBox.Show("Brak szkody.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.None);
                 return;
             }
 
             if (!czyJestAtak())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Brak ataku."), "Rami",
-=======
-                MessageBox.Show("Brak ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.None);
                 return;
             }
 
             if (!czyJestWykonawca())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Brak wykonawcy ataku."), "Rami",
-=======
-                MessageBox.Show("Brak wykonawcy ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.None);
                 return;
             }
 
-<<<<<<< HEAD
 
 
             
 
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             //----------------
 
             if (!czyRegulacja1MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 1 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R1 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyRegulacja2MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 2 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R2 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyRegulacja3MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 3 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R3 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyRegulacja4MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 4 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R4 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyRegulacja5MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 5 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R5 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyRegulacja6MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 6 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R6 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyRegulacja7MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 7 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R7 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyRegulacja8MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 8 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R8 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyRegulacja9MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 9 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R9 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyRegulacja10MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Regulacja 10 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Regulacja R10 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -6658,110 +6091,70 @@ namespace Rami
 
             if (!czyAktywa1MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 1 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A1 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAktywa2MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 2 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A2 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAktywa3MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 3 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A3 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAktywa4MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 4 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A4 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAktywa5MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 5 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A5 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAktywa6MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 6 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A6 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAktywa7MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 7 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A7 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAktywa8MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 8 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A8 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAktywa9MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 9 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A9 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAktywa10MaWlasnosc())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Aktywa 10 nie ma przypisanych własności ochrony."), "Rami",
-=======
-                MessageBox.Show("Aktywa A10 nie ma przypisanych własności ochrony.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -6770,110 +6163,70 @@ namespace Rami
 
             if (!czyAtak1MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 1 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M1 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak2MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 2 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M2 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak3MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 3 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M3 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak4MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 4 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M4 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak5MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 5 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M5 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak6MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 6 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M6 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak7MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 7 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M7 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak8MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 8 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M8 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak9MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 9 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M9 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak10MaAktywa())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 10 nie ma przypisanych aktywów."), "Rami",
-=======
-                MessageBox.Show("Atak M10 nie ma przypisanych aktywów.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -6882,110 +6235,70 @@ namespace Rami
 
             if (!czyAtak1MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 1 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M1 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak2MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 2 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M2 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak3MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 3 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M3 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak4MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 4 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M4 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak5MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 5 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M5 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak6MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 6 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M6 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak7MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 7 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M7 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak8MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 8 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M8 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak9MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 9 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M9 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak10MaZagrozenie())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 10 nie ma przypisanych zagrożeń."), "Rami",
-=======
-                MessageBox.Show("Atak M10 nie ma przypisanych zagrożeń.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -6994,129 +6307,82 @@ namespace Rami
 
             if (!czyAtak1MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 1 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M1 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak2MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 2 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M2 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak3MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 3 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M3 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak4MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 4 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M4 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak5MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 5 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M5 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak6MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 6 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M6 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak7MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 7 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M7 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak8MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 8 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M8 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak9MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 9 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M9 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (!czyAtak10MaWykonawce())
             {
-<<<<<<< HEAD
                 MessageBox.Show(_tlumacz.zmien("Atak 10 nie ma przypisanych wykonawców."), "Rami",
-=======
-                MessageBox.Show("Atak M10 nie ma przypisanych wykonawców.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             //----------------
 
-<<<<<<< HEAD
             
-=======
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
             if (textBoxAktywa1.Text != string.Empty)
             {
                 if (!czyAktywaMaRegulacje(0))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 1 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A1 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7126,11 +6392,7 @@ namespace Rami
             {
                 if (!czyAktywaMaRegulacje(1))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 2 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A2 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7140,11 +6402,7 @@ namespace Rami
             {
                 if (!czyAktywaMaRegulacje(2))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 3 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A3 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7154,11 +6412,7 @@ namespace Rami
             {
                 if (!czyAktywaMaRegulacje(3))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 4 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A4 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7168,11 +6422,7 @@ namespace Rami
             {
                 if (!czyAktywaMaRegulacje(4))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 5 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A5 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7182,11 +6432,7 @@ namespace Rami
             {
                 if (!czyAktywaMaRegulacje(5))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 6 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A6 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7196,11 +6442,7 @@ namespace Rami
             {
                 if (!czyAktywaMaRegulacje(6))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 7 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A7 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7210,11 +6452,7 @@ namespace Rami
             {
                 if (!czyAktywaMaRegulacje(7))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 8 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A8 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7224,11 +6462,7 @@ namespace Rami
             {
                 if (!czyAktywaMaRegulacje(8))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 9 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A9 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7238,11 +6472,7 @@ namespace Rami
             {
                 if (!czyAktywaMaRegulacje(9))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Aktywa 10 nie występują w żadnej regulacji."), "Rami",
-=======
-                    MessageBox.Show("Aktywa A10 nie występuje w żadnej regulacji.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7254,11 +6484,7 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(0))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 1 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W1 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7268,11 +6494,7 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(1))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 2 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W2 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7282,11 +6504,7 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(2))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 3 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W3 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7296,11 +6514,7 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(3))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 4 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W4 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7310,11 +6524,7 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(4))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 5 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W5 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7324,11 +6534,7 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(5))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 6 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W6 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7338,11 +6544,7 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(6))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 7 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W7 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7352,11 +6554,7 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(7))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 8 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W8 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7366,11 +6564,7 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(8))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 9 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W9 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7380,22 +6574,14 @@ namespace Rami
             {
                 if (!czyWlasnoscMaAktywa(9))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wlasność 10 nie występuje w żadnym aktywie."), "Rami",
-=======
-                    MessageBox.Show("Wlasność W10 nie występuje w żadnym aktywie.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
 
             //---------------- Nie sprawdzam czy kazde aktywa ma powiązany co najmniej jeden atak.
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
 
             //----------------Czy zagrożenie ma chociaż jeden atak
 
@@ -7403,11 +6589,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(0))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 1 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z1 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7417,11 +6599,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(1))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 2 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z2 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7431,11 +6609,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(2))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 3 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z3 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7445,11 +6619,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(3))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 4 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z4 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7459,11 +6629,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(4))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 5 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z5 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7473,11 +6639,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(5))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 6 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z6 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7487,11 +6649,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(6))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 7 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z7 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7501,11 +6659,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(7))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 8 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z8 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7515,11 +6669,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(8))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 9 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z9 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7529,11 +6679,7 @@ namespace Rami
             {
                 if (!czyZagrozenieMaAtak(9))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Zagrożenie 10 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Zakrozenie Z10 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7545,11 +6691,7 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(0))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 1 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W1 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7559,11 +6701,7 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(1))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 2 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W2 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7573,11 +6711,7 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(2))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 3 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W3 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7587,11 +6721,7 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(3))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 4 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W4 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7601,11 +6731,7 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(4))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 5 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W5 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7615,11 +6741,7 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(5))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 6 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W6 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7629,11 +6751,7 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(6))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 7 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W7 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7643,11 +6761,7 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(7))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 8 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W8 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7657,11 +6771,7 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(8))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 9 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W9 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
@@ -7671,23 +6781,13 @@ namespace Rami
             {
                 if (!czyWykonawcaMaAtak(9))
                 {
-<<<<<<< HEAD
                     MessageBox.Show(_tlumacz.zmien("Wykonawca 10 nie występuje w żadnym ataku."), "Rami",
-=======
-                    MessageBox.Show("Wykonawca W10 nie występuje w żadnym ataku.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                        MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
             }
-<<<<<<< HEAD
            
             MessageBox.Show(_tlumacz.zmien("Dane są spójne."), "Rami",
-=======
-
-
-            MessageBox.Show("Dane są spójne.", "Rami",
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }//sprawdzToolStripMenuItem_Click
@@ -8518,17 +7618,36 @@ namespace Rami
             aktualizuj();
         }//tabControl1_SelectedIndexChanged
 
+
+       // wybór języka pomocy 
+
         private void pomocToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (File.Exists(_helpFile))
+            if (toolStripComboBoxJezyk.SelectedIndex == 0)
             {
-                Help.ShowHelp(this, _helpFile);
+                if (File.Exists(_helpFile))
+                {
+                    Help.ShowHelp(this, _helpFile);
+                }
+                else
+                {
+                    MessageBox.Show("Plik pomocy RamiHelp.chm nie istnieje w katalogu Rami.", "Rami",
+                       MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
-            else
-                MessageBox.Show("Plik pomocy RamiHelp.chm nie istnieje w katalogu Rami.", "Rami",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else 
+            {
+                if (File.Exists(_helpFileA))
+                {
+                    Help.ShowHelp(this, _helpFileA);
+                }
+                else
+                {
+                    MessageBox.Show("Plik pomocy RamiHelpA.chm nie istnieje w katalogu Rami.", "Rami",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
 
-<<<<<<< HEAD
         }//pomocToolStripMenuItem_Click
 
         private void toolStripComboBoxJezyk_SelectedIndexChanged(object sender, EventArgs e)
@@ -8543,7 +7662,7 @@ namespace Rami
                 ustawPodpowiedzi();
                 ustawWlasnosci();
                 aktualizuj();// dodaje check-boxy
-
+                
                 pokazParametryRyzyka1();
                 pokazParametryRyzyka2();
                 pokazParametryRyzyka3();
@@ -8605,40 +7724,6 @@ namespace Rami
         {
             zapisz();
         }
-=======
-        }
-
-        private void textBoxWlasnosc9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelZ2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelO3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelA8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelA1_Click(object sender, EventArgs e)
-        {
-
-        }//pomocToolStripMenuItem_Click
-
->>>>>>> 0412c3c6613d615f52418e74019f13b8b3dcb13a
     }//class FormRami : Form
 
 }//namespace Rami
