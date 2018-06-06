@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 
 namespace Rami
 {
@@ -411,8 +412,6 @@ namespace Rami
                 dodaj("Time: ", ref _ens);
                 dodaj("Kwalifikacje: ", ref _pls);
                 dodaj("Qualifications: ", ref _ens);
-                dodaj("Kwalifikacje: ", ref _pls);
-                dodaj("Qualifications: ", ref _ens);
                 dodaj("Wiedza: ", ref _pls);
                 dodaj("Knowledge: ", ref _ens);
                 dodaj("Wyposażenie: ", ref _pls);
@@ -601,25 +600,25 @@ namespace Rami
                 dodaj("Attack 10 has no threats assigned.", ref _ens);
 
                 dodaj("Atak 1 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 1 has no artists assigned.", ref _ens);
+                dodaj("Attack 1 has no attacker assigned.", ref _ens);
                 dodaj("Atak 2 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 2 has no artists assigned.", ref _ens);
+                dodaj("Attack 2 has no attacker assigned.", ref _ens);
                 dodaj("Atak 3 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 3 has no artists assigned.", ref _ens);
+                dodaj("Attack 3 has no attacker assigned.", ref _ens);
                 dodaj("Atak 4 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 4 has no artists assigned.", ref _ens);
+                dodaj("Attack 4 has no attacker assigned.", ref _ens);
                 dodaj("Atak 5 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 5 has no artists assigned.", ref _ens);
+                dodaj("Attack 5 has no attacker assigned.", ref _ens);
                 dodaj("Atak 6 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 6 has no artists assigned.", ref _ens);
+                dodaj("Attack 6 has no attacker assigned.", ref _ens);
                 dodaj("Atak 7 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 7 has no artists assigned.", ref _ens);
+                dodaj("Attack 7 has no attacker assigned.", ref _ens);
                 dodaj("Atak 8 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 8 has no artists assigned.", ref _ens);
+                dodaj("Attack 8 has no attacker assigned.", ref _ens);
                 dodaj("Atak 9 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 9 has no artists assigned.", ref _ens);
+                dodaj("Attack 9 has no attacker assigned.", ref _ens);
                 dodaj("Atak 10 nie ma przypisanych wykonawców.", ref _pls);
-                dodaj("Attack 10 has no artists assigned.", ref _ens);
+                dodaj("Attack 10 has no attacker assigned.", ref _ens);
 
                 dodaj("Aktywa 1 nie występują w żadnej regulacji.", ref _pls);
                 dodaj("Assets 1 do not appear in any regulation.", ref _ens);
@@ -707,6 +706,9 @@ namespace Rami
 
                 dodaj("Dane są spójne.", ref _pls);
                 dodaj("The data is consistent.", ref _ens);
+
+                dodaj("Zmiany zostały zapisane poprawnie w XML.", ref _pls);
+                dodaj("The changes have been saved correctly in XML.", ref _ens);
 
             }//tlumacz
 
@@ -1116,7 +1118,7 @@ namespace Rami
             labelWplyw4.Top = textBoxRegulacja4.Top;
             labelWplyw5.Top = textBoxRegulacja5.Top;
             labelWplyw6.Top = textBoxRegulacja6.Top;
-            labelWplyw7.Top = textBoxRegulacja7.Top;
+            labelWplyw7.Top = textBoxRegulacja7.Top; 
             labelWplyw8.Top = textBoxRegulacja8.Top;
             labelWplyw9.Top = textBoxRegulacja9.Top;
             labelWplyw10.Top = textBoxRegulacja10.Top;
@@ -4903,7 +4905,6 @@ namespace Rami
 
             //------------------------------ Atak - Zagrożenie
             labelAtak11.Text = textBoxAtak1.Text;
-
             checkedListBoxZagrozenie1.Items[0] = textBoxZagrozenie1.Text;
             checkedListBoxZagrozenie1.Items[1] = textBoxZagrozenie2.Text;
             checkedListBoxZagrozenie1.Items[2] = textBoxZagrozenie3.Text;
@@ -5191,6 +5192,7 @@ namespace Rami
         /// </summary>
         private void zapisz()
         {
+             
             if (File.Exists(_plik))
             {
                 zapisz(_plik);
@@ -5198,6 +5200,18 @@ namespace Rami
                 _czynnosc = (int)_enum.zapisz;
                 ustawDostep();
                 _suma0 = sumaWartosci();
+                // okienko komunikatu o zapisie
+                //MessageBox.Show(_tlumacz.zmien("Dane zapisano poprawnie"), "Rami",
+                //  MessageBoxButtons.OK, MessageBoxIcon.None);
+                //return;
+
+                // okienko komunikatu o zapisie pojawiające się na kilka sekund
+                Frame frame = new Frame(_tlumacz.zmien("Zmiany zostały zapisane poprawnie w XML."));
+                frame.Show();
+                frame.Refresh();
+                Thread.Sleep(2000);
+                frame.Close();
+                frame.Dispose();
             }
         }//zapisz
 
@@ -7663,6 +7677,8 @@ namespace Rami
                 ustawWlasnosci();
                 aktualizuj();// dodaje check-boxy
                 
+
+
                 pokazParametryRyzyka1();
                 pokazParametryRyzyka2();
                 pokazParametryRyzyka3();
@@ -7692,6 +7708,7 @@ namespace Rami
                 ustawPodpowiedzi();
                 ustawWlasnosci();
                 aktualizuj();// dodaje check-boxy
+               
 
                 pokazParametryRyzyka1();
                 pokazParametryRyzyka1();
@@ -7720,10 +7737,12 @@ namespace Rami
             }
         }
 
+
         private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
         {
             zapisz();
         }
+
     }//class FormRami : Form
 
 }//namespace Rami

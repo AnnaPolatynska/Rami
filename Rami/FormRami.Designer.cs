@@ -873,7 +873,7 @@
             // 
             this.textBoxAktywa10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBoxAktywa10.Location = new System.Drawing.Point(506, 816);
+            this.textBoxAktywa10.Location = new System.Drawing.Point(559, 816);
             this.textBoxAktywa10.Multiline = true;
             this.textBoxAktywa10.Name = "textBoxAktywa10";
             this.textBoxAktywa10.Size = new System.Drawing.Size(497, 24);
@@ -883,7 +883,7 @@
             // 
             this.labelA10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA10.AutoSize = true;
-            this.labelA10.Location = new System.Drawing.Point(419, 816);
+            this.labelA10.Location = new System.Drawing.Point(503, 816);
             this.labelA10.Name = "labelA10";
             this.labelA10.Size = new System.Drawing.Size(57, 13);
             this.labelA10.TabIndex = 43;
@@ -893,7 +893,7 @@
             // 
             this.labelA1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA1.AutoSize = true;
-            this.labelA1.Location = new System.Drawing.Point(419, 13);
+            this.labelA1.Location = new System.Drawing.Point(503, 13);
             this.labelA1.Name = "labelA1";
             this.labelA1.Size = new System.Drawing.Size(51, 13);
             this.labelA1.TabIndex = 34;
@@ -903,7 +903,7 @@
             // 
             this.textBoxAktywa9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBoxAktywa9.Location = new System.Drawing.Point(507, 726);
+            this.textBoxAktywa9.Location = new System.Drawing.Point(560, 726);
             this.textBoxAktywa9.Multiline = true;
             this.textBoxAktywa9.Name = "textBoxAktywa9";
             this.textBoxAktywa9.Size = new System.Drawing.Size(497, 24);
@@ -913,7 +913,7 @@
             // 
             this.labelA9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA9.AutoSize = true;
-            this.labelA9.Location = new System.Drawing.Point(419, 726);
+            this.labelA9.Location = new System.Drawing.Point(503, 726);
             this.labelA9.Name = "labelA9";
             this.labelA9.Size = new System.Drawing.Size(51, 13);
             this.labelA9.TabIndex = 42;
@@ -923,7 +923,7 @@
             // 
             this.textBoxAktywa2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBoxAktywa2.Location = new System.Drawing.Point(507, 103);
+            this.textBoxAktywa2.Location = new System.Drawing.Point(560, 103);
             this.textBoxAktywa2.Multiline = true;
             this.textBoxAktywa2.Name = "textBoxAktywa2";
             this.textBoxAktywa2.Size = new System.Drawing.Size(498, 24);
@@ -933,7 +933,7 @@
             // 
             this.textBoxAktywa8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBoxAktywa8.Location = new System.Drawing.Point(507, 636);
+            this.textBoxAktywa8.Location = new System.Drawing.Point(560, 636);
             this.textBoxAktywa8.Multiline = true;
             this.textBoxAktywa8.Name = "textBoxAktywa8";
             this.textBoxAktywa8.Size = new System.Drawing.Size(497, 24);
@@ -943,7 +943,7 @@
             // 
             this.labelA8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA8.AutoSize = true;
-            this.labelA8.Location = new System.Drawing.Point(419, 636);
+            this.labelA8.Location = new System.Drawing.Point(503, 636);
             this.labelA8.Name = "labelA8";
             this.labelA8.Size = new System.Drawing.Size(51, 13);
             this.labelA8.TabIndex = 41;
@@ -953,7 +953,7 @@
             // 
             this.textBoxAktywa3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBoxAktywa3.Location = new System.Drawing.Point(507, 193);
+            this.textBoxAktywa3.Location = new System.Drawing.Point(560, 193);
             this.textBoxAktywa3.Multiline = true;
             this.textBoxAktywa3.Name = "textBoxAktywa3";
             this.textBoxAktywa3.Size = new System.Drawing.Size(498, 24);
@@ -963,7 +963,7 @@
             // 
             this.textBoxAktywa7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBoxAktywa7.Location = new System.Drawing.Point(507, 550);
+            this.textBoxAktywa7.Location = new System.Drawing.Point(560, 550);
             this.textBoxAktywa7.Multiline = true;
             this.textBoxAktywa7.Name = "textBoxAktywa7";
             this.textBoxAktywa7.Size = new System.Drawing.Size(497, 24);
@@ -973,7 +973,7 @@
             // 
             this.labelA7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA7.AutoSize = true;
-            this.labelA7.Location = new System.Drawing.Point(419, 550);
+            this.labelA7.Location = new System.Drawing.Point(503, 550);
             this.labelA7.Name = "labelA7";
             this.labelA7.Size = new System.Drawing.Size(51, 13);
             this.labelA7.TabIndex = 40;
@@ -983,7 +983,7 @@
             // 
             this.textBoxAktywa4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBoxAktywa4.Location = new System.Drawing.Point(507, 283);
+            this.textBoxAktywa4.Location = new System.Drawing.Point(560, 283);
             this.textBoxAktywa4.Multiline = true;
             this.textBoxAktywa4.Name = "textBoxAktywa4";
             this.textBoxAktywa4.Size = new System.Drawing.Size(498, 24);
@@ -993,7 +993,7 @@
             // 
             this.textBoxAktywa6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBoxAktywa6.Location = new System.Drawing.Point(506, 463);
+            this.textBoxAktywa6.Location = new System.Drawing.Point(559, 463);
             this.textBoxAktywa6.Multiline = true;
             this.textBoxAktywa6.Name = "textBoxAktywa6";
             this.textBoxAktywa6.Size = new System.Drawing.Size(498, 24);
@@ -1003,7 +1003,7 @@
             // 
             this.labelA6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA6.AutoSize = true;
-            this.labelA6.Location = new System.Drawing.Point(419, 463);
+            this.labelA6.Location = new System.Drawing.Point(503, 463);
             this.labelA6.Name = "labelA6";
             this.labelA6.Size = new System.Drawing.Size(51, 13);
             this.labelA6.TabIndex = 39;
@@ -1013,7 +1013,7 @@
             // 
             this.textBoxAktywa5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.textBoxAktywa5.Location = new System.Drawing.Point(506, 373);
+            this.textBoxAktywa5.Location = new System.Drawing.Point(559, 373);
             this.textBoxAktywa5.Multiline = true;
             this.textBoxAktywa5.Name = "textBoxAktywa5";
             this.textBoxAktywa5.Size = new System.Drawing.Size(497, 24);
@@ -1041,7 +1041,7 @@
             // 
             this.labelA5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA5.AutoSize = true;
-            this.labelA5.Location = new System.Drawing.Point(419, 373);
+            this.labelA5.Location = new System.Drawing.Point(503, 373);
             this.labelA5.Name = "labelA5";
             this.labelA5.Size = new System.Drawing.Size(51, 13);
             this.labelA5.TabIndex = 38;
@@ -1087,7 +1087,7 @@
             // 
             this.labelA4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA4.AutoSize = true;
-            this.labelA4.Location = new System.Drawing.Point(419, 283);
+            this.labelA4.Location = new System.Drawing.Point(503, 283);
             this.labelA4.Name = "labelA4";
             this.labelA4.Size = new System.Drawing.Size(51, 13);
             this.labelA4.TabIndex = 37;
@@ -1133,7 +1133,7 @@
             // 
             this.labelA3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA3.AutoSize = true;
-            this.labelA3.Location = new System.Drawing.Point(419, 186);
+            this.labelA3.Location = new System.Drawing.Point(503, 193);
             this.labelA3.Name = "labelA3";
             this.labelA3.Size = new System.Drawing.Size(51, 13);
             this.labelA3.TabIndex = 36;
@@ -1143,7 +1143,7 @@
             // 
             this.labelWplyw10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw10.AutoSize = true;
-            this.labelWplyw10.Location = new System.Drawing.Point(294, 816);
+            this.labelWplyw10.Location = new System.Drawing.Point(386, 823);
             this.labelWplyw10.Name = "labelWplyw10";
             this.labelWplyw10.Size = new System.Drawing.Size(56, 13);
             this.labelWplyw10.TabIndex = 13;
@@ -1153,7 +1153,7 @@
             // 
             this.labelWplyw9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw9.AutoSize = true;
-            this.labelWplyw9.Location = new System.Drawing.Point(294, 726);
+            this.labelWplyw9.Location = new System.Drawing.Point(386, 733);
             this.labelWplyw9.Name = "labelWplyw9";
             this.labelWplyw9.Size = new System.Drawing.Size(50, 13);
             this.labelWplyw9.TabIndex = 12;
@@ -1163,7 +1163,7 @@
             // 
             this.labelWplyw8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw8.AutoSize = true;
-            this.labelWplyw8.Location = new System.Drawing.Point(294, 636);
+            this.labelWplyw8.Location = new System.Drawing.Point(386, 643);
             this.labelWplyw8.Name = "labelWplyw8";
             this.labelWplyw8.Size = new System.Drawing.Size(50, 13);
             this.labelWplyw8.TabIndex = 11;
@@ -1173,7 +1173,7 @@
             // 
             this.labelA2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelA2.AutoSize = true;
-            this.labelA2.Location = new System.Drawing.Point(419, 103);
+            this.labelA2.Location = new System.Drawing.Point(503, 103);
             this.labelA2.Name = "labelA2";
             this.labelA2.Size = new System.Drawing.Size(51, 13);
             this.labelA2.TabIndex = 35;
@@ -1183,7 +1183,7 @@
             // 
             this.labelWplyw7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw7.AutoSize = true;
-            this.labelWplyw7.Location = new System.Drawing.Point(294, 550);
+            this.labelWplyw7.Location = new System.Drawing.Point(386, 557);
             this.labelWplyw7.Name = "labelWplyw7";
             this.labelWplyw7.Size = new System.Drawing.Size(50, 13);
             this.labelWplyw7.TabIndex = 10;
@@ -1193,7 +1193,7 @@
             // 
             this.textBoxAktywa1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxAktywa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxAktywa1.Location = new System.Drawing.Point(507, 12);
+            this.textBoxAktywa1.Location = new System.Drawing.Point(560, 12);
             this.textBoxAktywa1.Multiline = true;
             this.textBoxAktywa1.Name = "textBoxAktywa1";
             this.textBoxAktywa1.Size = new System.Drawing.Size(498, 24);
@@ -1203,7 +1203,7 @@
             // 
             this.labelWplyw6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw6.AutoSize = true;
-            this.labelWplyw6.Location = new System.Drawing.Point(294, 463);
+            this.labelWplyw6.Location = new System.Drawing.Point(386, 470);
             this.labelWplyw6.Name = "labelWplyw6";
             this.labelWplyw6.Size = new System.Drawing.Size(50, 13);
             this.labelWplyw6.TabIndex = 9;
@@ -1213,7 +1213,7 @@
             // 
             this.labelWplyw5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw5.AutoSize = true;
-            this.labelWplyw5.Location = new System.Drawing.Point(294, 373);
+            this.labelWplyw5.Location = new System.Drawing.Point(386, 380);
             this.labelWplyw5.Name = "labelWplyw5";
             this.labelWplyw5.Size = new System.Drawing.Size(50, 13);
             this.labelWplyw5.TabIndex = 8;
@@ -1223,7 +1223,7 @@
             // 
             this.labelWplyw4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw4.AutoSize = true;
-            this.labelWplyw4.Location = new System.Drawing.Point(294, 283);
+            this.labelWplyw4.Location = new System.Drawing.Point(386, 290);
             this.labelWplyw4.Name = "labelWplyw4";
             this.labelWplyw4.Size = new System.Drawing.Size(50, 13);
             this.labelWplyw4.TabIndex = 7;
@@ -1233,7 +1233,7 @@
             // 
             this.labelWplyw3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw3.AutoSize = true;
-            this.labelWplyw3.Location = new System.Drawing.Point(294, 193);
+            this.labelWplyw3.Location = new System.Drawing.Point(386, 200);
             this.labelWplyw3.Name = "labelWplyw3";
             this.labelWplyw3.Size = new System.Drawing.Size(50, 13);
             this.labelWplyw3.TabIndex = 6;
@@ -1243,7 +1243,7 @@
             // 
             this.labelWplyw2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw2.AutoSize = true;
-            this.labelWplyw2.Location = new System.Drawing.Point(294, 103);
+            this.labelWplyw2.Location = new System.Drawing.Point(386, 110);
             this.labelWplyw2.Name = "labelWplyw2";
             this.labelWplyw2.Size = new System.Drawing.Size(50, 13);
             this.labelWplyw2.TabIndex = 5;
@@ -1253,7 +1253,7 @@
             // 
             this.labelWplyw1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelWplyw1.AutoSize = true;
-            this.labelWplyw1.Location = new System.Drawing.Point(294, 13);
+            this.labelWplyw1.Location = new System.Drawing.Point(386, 20);
             this.labelWplyw1.Margin = new System.Windows.Forms.Padding(3);
             this.labelWplyw1.Name = "labelWplyw1";
             this.labelWplyw1.Size = new System.Drawing.Size(50, 13);
@@ -1263,7 +1263,7 @@
             // trackBarWplyw10
             // 
             this.trackBarWplyw10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw10.Location = new System.Drawing.Point(350, 809);
+            this.trackBarWplyw10.Location = new System.Drawing.Point(442, 816);
             this.trackBarWplyw10.Maximum = 5;
             this.trackBarWplyw10.Minimum = 1;
             this.trackBarWplyw10.Name = "trackBarWplyw10";
@@ -1277,7 +1277,7 @@
             // trackBarWplyw9
             // 
             this.trackBarWplyw9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw9.Location = new System.Drawing.Point(350, 719);
+            this.trackBarWplyw9.Location = new System.Drawing.Point(442, 726);
             this.trackBarWplyw9.Maximum = 5;
             this.trackBarWplyw9.Minimum = 1;
             this.trackBarWplyw9.Name = "trackBarWplyw9";
@@ -1291,7 +1291,7 @@
             // trackBarWplyw8
             // 
             this.trackBarWplyw8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw8.Location = new System.Drawing.Point(350, 629);
+            this.trackBarWplyw8.Location = new System.Drawing.Point(442, 636);
             this.trackBarWplyw8.Maximum = 5;
             this.trackBarWplyw8.Minimum = 1;
             this.trackBarWplyw8.Name = "trackBarWplyw8";
@@ -1311,13 +1311,13 @@
             this.textBoxRegulacja10.Multiline = true;
             this.textBoxRegulacja10.Name = "textBoxRegulacja10";
             this.textBoxRegulacja10.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja10.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja10.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja10.TabIndex = 1;
             // 
             // trackBarWplyw7
             // 
             this.trackBarWplyw7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw7.Location = new System.Drawing.Point(350, 539);
+            this.trackBarWplyw7.Location = new System.Drawing.Point(442, 546);
             this.trackBarWplyw7.Maximum = 5;
             this.trackBarWplyw7.Minimum = 1;
             this.trackBarWplyw7.Name = "trackBarWplyw7";
@@ -1337,13 +1337,13 @@
             this.textBoxRegulacja9.Multiline = true;
             this.textBoxRegulacja9.Name = "textBoxRegulacja9";
             this.textBoxRegulacja9.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja9.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja9.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja9.TabIndex = 1;
             // 
             // trackBarWplyw6
             // 
             this.trackBarWplyw6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw6.Location = new System.Drawing.Point(350, 456);
+            this.trackBarWplyw6.Location = new System.Drawing.Point(442, 463);
             this.trackBarWplyw6.Maximum = 5;
             this.trackBarWplyw6.Minimum = 1;
             this.trackBarWplyw6.Name = "trackBarWplyw6";
@@ -1363,13 +1363,13 @@
             this.textBoxRegulacja8.Multiline = true;
             this.textBoxRegulacja8.Name = "textBoxRegulacja8";
             this.textBoxRegulacja8.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja8.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja8.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja8.TabIndex = 1;
             // 
             // trackBarWplyw5
             // 
             this.trackBarWplyw5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw5.Location = new System.Drawing.Point(350, 366);
+            this.trackBarWplyw5.Location = new System.Drawing.Point(442, 373);
             this.trackBarWplyw5.Maximum = 5;
             this.trackBarWplyw5.Minimum = 1;
             this.trackBarWplyw5.Name = "trackBarWplyw5";
@@ -1389,13 +1389,13 @@
             this.textBoxRegulacja7.Multiline = true;
             this.textBoxRegulacja7.Name = "textBoxRegulacja7";
             this.textBoxRegulacja7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja7.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja7.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja7.TabIndex = 1;
             // 
             // trackBarWplyw4
             // 
             this.trackBarWplyw4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw4.Location = new System.Drawing.Point(350, 276);
+            this.trackBarWplyw4.Location = new System.Drawing.Point(442, 283);
             this.trackBarWplyw4.Maximum = 5;
             this.trackBarWplyw4.Minimum = 1;
             this.trackBarWplyw4.Name = "trackBarWplyw4";
@@ -1415,13 +1415,13 @@
             this.textBoxRegulacja6.Multiline = true;
             this.textBoxRegulacja6.Name = "textBoxRegulacja6";
             this.textBoxRegulacja6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja6.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja6.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja6.TabIndex = 1;
             // 
             // trackBarWplyw3
             // 
             this.trackBarWplyw3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw3.Location = new System.Drawing.Point(350, 186);
+            this.trackBarWplyw3.Location = new System.Drawing.Point(442, 193);
             this.trackBarWplyw3.Maximum = 5;
             this.trackBarWplyw3.Minimum = 1;
             this.trackBarWplyw3.Name = "trackBarWplyw3";
@@ -1441,13 +1441,13 @@
             this.textBoxRegulacja5.Multiline = true;
             this.textBoxRegulacja5.Name = "textBoxRegulacja5";
             this.textBoxRegulacja5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja5.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja5.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja5.TabIndex = 1;
             // 
             // trackBarWplyw2
             // 
             this.trackBarWplyw2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw2.Location = new System.Drawing.Point(350, 96);
+            this.trackBarWplyw2.Location = new System.Drawing.Point(442, 103);
             this.trackBarWplyw2.Maximum = 5;
             this.trackBarWplyw2.Minimum = 1;
             this.trackBarWplyw2.Name = "trackBarWplyw2";
@@ -1467,7 +1467,7 @@
             this.textBoxRegulacja4.Multiline = true;
             this.textBoxRegulacja4.Name = "textBoxRegulacja4";
             this.textBoxRegulacja4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja4.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja4.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja4.TabIndex = 1;
             // 
             // textBoxRegulacja3
@@ -1479,13 +1479,13 @@
             this.textBoxRegulacja3.Multiline = true;
             this.textBoxRegulacja3.Name = "textBoxRegulacja3";
             this.textBoxRegulacja3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja3.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja3.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja3.TabIndex = 1;
             // 
             // trackBarWplyw1
             // 
             this.trackBarWplyw1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBarWplyw1.Location = new System.Drawing.Point(350, 6);
+            this.trackBarWplyw1.Location = new System.Drawing.Point(442, 13);
             this.trackBarWplyw1.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.trackBarWplyw1.Maximum = 5;
             this.trackBarWplyw1.Minimum = 1;
@@ -1506,7 +1506,7 @@
             this.textBoxRegulacja2.Multiline = true;
             this.textBoxRegulacja2.Name = "textBoxRegulacja2";
             this.textBoxRegulacja2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja2.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja2.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja2.TabIndex = 1;
             // 
             // textBoxRegulacja1
@@ -1518,7 +1518,7 @@
             this.textBoxRegulacja1.Multiline = true;
             this.textBoxRegulacja1.Name = "textBoxRegulacja1";
             this.textBoxRegulacja1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRegulacja1.Size = new System.Drawing.Size(182, 73);
+            this.textBoxRegulacja1.Size = new System.Drawing.Size(285, 73);
             this.textBoxRegulacja1.TabIndex = 0;
             // 
             // tabPage6
@@ -2108,7 +2108,7 @@
             this.textBoxAtak10.Multiline = true;
             this.textBoxAtak10.Name = "textBoxAtak10";
             this.textBoxAtak10.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak10.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak10.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak10.TabIndex = 7;
             // 
             // textBoxAtak1
@@ -2120,7 +2120,7 @@
             this.textBoxAtak1.Multiline = true;
             this.textBoxAtak1.Name = "textBoxAtak1";
             this.textBoxAtak1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak1.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak1.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak1.TabIndex = 6;
             // 
             // textBoxAtak9
@@ -2132,7 +2132,7 @@
             this.textBoxAtak9.Multiline = true;
             this.textBoxAtak9.Name = "textBoxAtak9";
             this.textBoxAtak9.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak9.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak9.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak9.TabIndex = 7;
             // 
             // textBoxAtak2
@@ -2144,7 +2144,7 @@
             this.textBoxAtak2.Multiline = true;
             this.textBoxAtak2.Name = "textBoxAtak2";
             this.textBoxAtak2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak2.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak2.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak2.TabIndex = 7;
             // 
             // textBoxAtak8
@@ -2156,7 +2156,7 @@
             this.textBoxAtak8.Multiline = true;
             this.textBoxAtak8.Name = "textBoxAtak8";
             this.textBoxAtak8.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak8.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak8.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak8.TabIndex = 7;
             // 
             // textBoxAtak3
@@ -2168,7 +2168,7 @@
             this.textBoxAtak3.Multiline = true;
             this.textBoxAtak3.Name = "textBoxAtak3";
             this.textBoxAtak3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak3.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak3.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak3.TabIndex = 7;
             // 
             // textBoxAtak7
@@ -2180,7 +2180,7 @@
             this.textBoxAtak7.Multiline = true;
             this.textBoxAtak7.Name = "textBoxAtak7";
             this.textBoxAtak7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak7.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak7.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak7.TabIndex = 7;
             // 
             // textBoxAtak4
@@ -2192,7 +2192,7 @@
             this.textBoxAtak4.Multiline = true;
             this.textBoxAtak4.Name = "textBoxAtak4";
             this.textBoxAtak4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak4.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak4.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak4.TabIndex = 7;
             // 
             // textBoxAtak6
@@ -2204,7 +2204,7 @@
             this.textBoxAtak6.Multiline = true;
             this.textBoxAtak6.Name = "textBoxAtak6";
             this.textBoxAtak6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak6.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak6.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak6.TabIndex = 7;
             // 
             // textBoxAtak5
@@ -2216,7 +2216,7 @@
             this.textBoxAtak5.Multiline = true;
             this.textBoxAtak5.Name = "textBoxAtak5";
             this.textBoxAtak5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxAtak5.Size = new System.Drawing.Size(1011, 84);
+            this.textBoxAtak5.Size = new System.Drawing.Size(960, 84);
             this.textBoxAtak5.TabIndex = 7;
             // 
             // tabPage63
@@ -6231,6 +6231,7 @@
             this.KeyPreview = true;
             this.Name = "FormRami";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormRami_FormClosing);
             this.Shown += new System.EventHandler(this.FormRami_Shown);
             this.tabControl1.ResumeLayout(false);
