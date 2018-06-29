@@ -4,7 +4,6 @@ Compiled file=RamiHelpA.chm
 Contents file=RamiHelpA.hhc
 Default topic=Introduction.htm
 Display compile progress=No
-Index file=Index.hhk
 Language=0x415 Polski (Polska)
 
 
@@ -12,8 +11,4 @@ Language=0x415 Polski (Polska)
 Introduction.htm
 
 [INFOTYPES]
-Category:Introduction
-CategoryDesc: 
-Category:Using
-CategoryDesc: 
 

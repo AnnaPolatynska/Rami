@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using System.Threading;
 
 namespace Rami
 {
@@ -706,9 +705,6 @@ namespace Rami
 
                 dodaj("Dane są spójne.", ref _pls);
                 dodaj("The data is consistent.", ref _ens);
-
-                dodaj("Zmiany zostały zapisane poprawnie w XML.", ref _pls);
-                dodaj("The changes have been saved correctly in XML.", ref _ens);
 
             }//tlumacz
 
@@ -5192,7 +5188,6 @@ namespace Rami
         /// </summary>
         private void zapisz()
         {
-             
             if (File.Exists(_plik))
             {
                 zapisz(_plik);
@@ -5200,18 +5195,6 @@ namespace Rami
                 _czynnosc = (int)_enum.zapisz;
                 ustawDostep();
                 _suma0 = sumaWartosci();
-                // okienko komunikatu o zapisie
-                //MessageBox.Show(_tlumacz.zmien("Dane zapisano poprawnie"), "Rami",
-                //  MessageBoxButtons.OK, MessageBoxIcon.None);
-                //return;
-
-                // okienko komunikatu o zapisie pojawiające się na kilka sekund
-                Frame frame = new Frame(_tlumacz.zmien("Zmiany zostały zapisane poprawnie w XML."));
-                frame.Show();
-                frame.Refresh();
-                Thread.Sleep(2000);
-                frame.Close();
-                frame.Dispose();
             }
         }//zapisz
 
@@ -7677,8 +7660,6 @@ namespace Rami
                 ustawWlasnosci();
                 aktualizuj();// dodaje check-boxy
                 
-
-
                 pokazParametryRyzyka1();
                 pokazParametryRyzyka2();
                 pokazParametryRyzyka3();
@@ -7708,7 +7689,6 @@ namespace Rami
                 ustawPodpowiedzi();
                 ustawWlasnosci();
                 aktualizuj();// dodaje check-boxy
-               
 
                 pokazParametryRyzyka1();
                 pokazParametryRyzyka1();
@@ -7736,7 +7716,6 @@ namespace Rami
                 //MessageBox.Show("Zmiana wersji językowej widoczna będzie po ponownym uruchomieniu Rami.", "Rami", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
 
         private void zapiszToolStripMenuItem_Click(object sender, EventArgs e)
         {
